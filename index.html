@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="sample _form">
+      <fieldset>
+        <label for="first">first name:</label>
+        <input
+          type="text"
+          name="first"
+          placeholder="Enter First Name"
+          minlength="3"
+          required
+        />
+      </fieldset>
+ 
+      <fieldset>
+        <label for="last">last name:</label>
+        <input
+          type="text"
+          name="last"
+          placeholder="Enter Last Name "
+          minlength="3"
+          required
+        />
+      </fieldset>
+ 
+      <fieldset>
+        <label for="currently_enrolled"> enrolled at cf?</label>
+        <input type="checkbox" name="currently_enrolled" value="enrolled" />
+      </fieldset>
+ 
+      <fieldset>
+        <label for="future_classes"> interested in taking more classes</label>
+        <input type="radio" name="future_classes" value="yes" />yes
+        <input type="radio" name="future_classes" value="no" />no
+      </fieldset>
+ 
+      <button id="submit_button" type="submit">add student</button>
+    </form>
+ 
+    <section>
+      <table>
+        <thead>
+          <th>first name</th>
+          <th>last name</th>
+          <th>enrolled?</th>
+          <th>interested in taking more classes</th>
+        </thead>
+        <tbody id="student_table">
+          <!-- dynamic data will be inserted in the form -->
+ 
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>
+ 
